@@ -175,7 +175,6 @@
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         font-weight: 100;
-        font-style: normal;
-        font-variation-settings: "slnt" -10;
+        font-style: italic;
     }
 </style>
