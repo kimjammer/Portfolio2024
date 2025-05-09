@@ -242,8 +242,8 @@
                 fill: "forwards"
             });
             container.animate([
-                {width: "100vmin", height: "100vmin"},
-                {width: "0vmin", height: "0vmin"}
+                {scale: "1"},
+                {scale: "0"}
             ], {
                 duration: 1000,
                 easing: "ease",

@@ -16,7 +16,7 @@
     <title>KimJammer</title>
     <meta name="description" content="KimJammer's Portfolio and website.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
 </svelte:head>
 
