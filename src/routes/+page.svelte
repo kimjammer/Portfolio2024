@@ -6,7 +6,7 @@
     import LoadingAnimation from "../components/LoadingAnimation.svelte";
 
     //Wait 500ms then make introAnimationDone true (The curtain will have come down.)
-    let introAnimationDone = false;
+    let introAnimationDone = $state(false);
     setTimeout(() => {
         introAnimationDone = true;
     }, 500);

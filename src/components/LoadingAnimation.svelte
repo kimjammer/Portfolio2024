@@ -1,219 +1,219 @@
 <style lang="scss">
-  :root{
-    --animationDuration: 1s;
-  }
+	:root{
+		--animationDuration: 1s;
+	}
 
-  .cropcircle{
-    overflow: hidden;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+	.cropcircle{
+		overflow: hidden;
+		position: fixed;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
 
-    z-index: 9999;
-  }
+		z-index: 9999;
+	}
 
-  .container {
-    width: 100vmin;
-    height: 100vmin;
-  }
+	.container {
+		width: 100vmin;
+		height: 100vmin;
+	}
 
-  svg {
-    width: 100%;
-    height: 100%;
-  }
+	svg {
+		width: 100%;
+		height: 100%;
+	}
 
-  .curtain {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 200vh;
-    border-radius: 0 0 20vw 20vw;
-    z-index: -1;
-    background: var(--secondary-color);
-    animation: background-move var(--animationDuration)  forwards;
-  }
+	.curtain {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 200vh;
+		border-radius: 0 0 20vw 20vw;
+		z-index: -1;
+		background: var(--secondary-color);
+		animation: background-move var(--animationDuration)  forwards;
+	}
 
-  @keyframes background-move {
-    0% {
-      transform: translateY(-200%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
-  }
+	@keyframes background-move {
+		0% {
+			transform: translateY(-200%);
+		}
+		100% {
+			transform: translateY(0%);
+		}
+	}
 
-  .k-left-fill{
-    transform: translateY(100%);
-    animation: k-left-fill-move var(--animationDuration) infinite forwards;
-    animation-direction: alternate;
-  }
+	.k-left-fill{
+		transform: translateY(100%);
+		animation: k-left-fill-move var(--animationDuration) infinite forwards;
+		animation-direction: alternate;
+	}
 
-  #k-left-clipping-mask{
-    animation: k-left-mask-move var(--animationDuration) infinite forwards;
-    animation-direction: alternate;
-  }
+	#k-left-clipping-mask{
+		animation: k-left-mask-move var(--animationDuration) infinite forwards;
+		animation-direction: alternate;
+	}
 
-  @keyframes k-left-fill-move {
-    20% {
-      transform: translateY(100%);
-    }
-    80% {
-      transform: translateY(0%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
-  }
-  @keyframes k-left-mask-move {
-    50% {
-      transform: translateY(0%);
-    }
-    80% {
-      transform: translateY(-29.5%);
-    }
-    100% {
-      transform: translateY(-29.5%);
-    }
-  }
+	@keyframes k-left-fill-move {
+		20% {
+			transform: translateY(100%);
+		}
+		80% {
+			transform: translateY(0%);
+		}
+		100% {
+			transform: translateY(0%);
+		}
+	}
+	@keyframes k-left-mask-move {
+		50% {
+			transform: translateY(0%);
+		}
+		80% {
+			transform: translateY(-29.5%);
+		}
+		100% {
+			transform: translateY(-29.5%);
+		}
+	}
 
-  .k-upper-fill{
-    transform: translate(58.5%, -60%);
-    animation: k-upper-fill-move var(--animationDuration) forwards infinite;
-    animation-direction: alternate;
-  }
-  #k-upper-clipping-mask{
-    animation: k-upper-mask-move var(--animationDuration) forwards infinite;
-    animation-direction: alternate;
-  }
+	.k-upper-fill{
+		transform: translate(58.5%, -60%);
+		animation: k-upper-fill-move var(--animationDuration) forwards infinite;
+		animation-direction: alternate;
+	}
+	#k-upper-clipping-mask{
+		animation: k-upper-mask-move var(--animationDuration) forwards infinite;
+		animation-direction: alternate;
+	}
 
-  @keyframes k-upper-fill-move {
-    20% {
-      transform: translate(58.5%, -60%);
-    }
-    80% {
-      transform: translate(0%, 0%);
-    }
-    100% {
-      transform: translate(0%, 0%);
-    }
-  }
-  @keyframes k-upper-mask-move {
-    50% {
-      transform: translate(0%, 0%);
-    }
-    80% {
-      transform: translate(-21%, 21.6%);
-    }
-    100% {
-      transform: translate(-21%, 21.6%);
-    }
-  }
+	@keyframes k-upper-fill-move {
+		20% {
+			transform: translate(58.5%, -60%);
+		}
+		80% {
+			transform: translate(0%, 0%);
+		}
+		100% {
+			transform: translate(0%, 0%);
+		}
+	}
+	@keyframes k-upper-mask-move {
+		50% {
+			transform: translate(0%, 0%);
+		}
+		80% {
+			transform: translate(-21%, 21.6%);
+		}
+		100% {
+			transform: translate(-21%, 21.6%);
+		}
+	}
 
-  .k-lower-fill{
-    transform: translate(39%, 60%);
-    animation: k-lower-fill-move var(--animationDuration) forwards infinite;
-    animation-direction: alternate;
-  }
-  #k-lower-clipping-mask{
-    animation: k-lower-mask-move var(--animationDuration) forwards infinite;
-    animation-direction: alternate;
-  }
+	.k-lower-fill{
+		transform: translate(39%, 60%);
+		animation: k-lower-fill-move var(--animationDuration) forwards infinite;
+		animation-direction: alternate;
+	}
+	#k-lower-clipping-mask{
+		animation: k-lower-mask-move var(--animationDuration) forwards infinite;
+		animation-direction: alternate;
+	}
 
-  @keyframes k-lower-fill-move {
-    20% {
-      transform: translate(39%, 60%);
-    }
-    80% {
-      transform: translate(0%, 0%);
-    }
-    100% {
-      transform: translate(0%, 0%);
-    }
-  }
-  @keyframes k-lower-mask-move {
-    50% {
-      transform: translate(0%, 0%);
-    }
-    75% {
-      transform: translate(-19.2%, -29.4%);
-    }
-    100% {
-      transform: translate(-19.2%, -29.4%);
-    }
-  }
+	@keyframes k-lower-fill-move {
+		20% {
+			transform: translate(39%, 60%);
+		}
+		80% {
+			transform: translate(0%, 0%);
+		}
+		100% {
+			transform: translate(0%, 0%);
+		}
+	}
+	@keyframes k-lower-mask-move {
+		50% {
+			transform: translate(0%, 0%);
+		}
+		75% {
+			transform: translate(-19.2%, -29.4%);
+		}
+		100% {
+			transform: translate(-19.2%, -29.4%);
+		}
+	}
 
-  .j-upper-fill{
-    transform: translateY(-67%);
-    animation: j-upper-fill-move var(--animationDuration) forwards infinite;
-    animation-direction: alternate;
-  }
-  #j-upper-clipping-mask{
-    animation: j-upper-mask-move var(--animationDuration) forwards infinite;
-    animation-direction: alternate;
-  }
+	.j-upper-fill{
+		transform: translateY(-67%);
+		animation: j-upper-fill-move var(--animationDuration) forwards infinite;
+		animation-direction: alternate;
+	}
+	#j-upper-clipping-mask{
+		animation: j-upper-mask-move var(--animationDuration) forwards infinite;
+		animation-direction: alternate;
+	}
 
-  @keyframes j-upper-fill-move {
-    20% {
-      transform: translateY(-67%);
-    }
-    55% {
-      transform: translateY(0%);
-    }
-    100% {
-      transform: translateY(0%);
-    }
-  }
-  @keyframes j-upper-mask-move {
-    50% {
-      transform: translateY(0%);
-    }
-    80% {
-      transform: translateY(21.5%);
-    }
-    100% {
-      transform: translateY(21.5%);
-    }
-  }
+	@keyframes j-upper-fill-move {
+		20% {
+			transform: translateY(-67%);
+		}
+		55% {
+			transform: translateY(0%);
+		}
+		100% {
+			transform: translateY(0%);
+		}
+	}
+	@keyframes j-upper-mask-move {
+		50% {
+			transform: translateY(0%);
+		}
+		80% {
+			transform: translateY(21.5%);
+		}
+		100% {
+			transform: translateY(21.5%);
+		}
+	}
 
-  .j-lower-fill{
-    animation: j-lower-fill-move var(--animationDuration) forwards infinite;
-    animation-direction: alternate;
-  }
+	.j-lower-fill{
+		animation: j-lower-fill-move var(--animationDuration) forwards infinite;
+		animation-direction: alternate;
+	}
 
-  @keyframes j-lower-fill-move {
-    50% {
-      transform: rotate(0deg);
-    }
-    80% {
-      transform: rotate(90deg);
-    }
-    100% {
-      transform: rotate(90deg);
-    }
-  }
+	@keyframes j-lower-fill-move {
+		50% {
+			transform: rotate(0deg);
+		}
+		80% {
+			transform: rotate(90deg);
+		}
+		100% {
+			transform: rotate(90deg);
+		}
+	}
 
-  .shadow{
-    opacity: 0;
-    animation: shadow-move var(--animationDuration) forwards infinite;
-    animation-direction: alternate;
-  }
-  @keyframes shadow-move {
-    60% {
-      opacity: 0;
-    }
-    80% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
+	.shadow{
+		opacity: 0;
+		animation: shadow-move var(--animationDuration) forwards infinite;
+		animation-direction: alternate;
+	}
+	@keyframes shadow-move {
+		60% {
+			opacity: 0;
+		}
+		80% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 </style>
 
 <script lang="ts">
@@ -268,15 +268,15 @@
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 			<style type="text/css">
 				.background{fill: #00000000;}
-                .shadow{fill: #212145; clip-path:url(#shadow-clipping-mask);}
-                .white{fill: var(--primary-color);}
+				.shadow{fill: #212145; clip-path:url(#shadow-clipping-mask);}
+				.white{fill: var(--primary-color);}
 
-                .k-left-fill{clip-path:url(#k-left-clipping-mask);}
-                .k-upper-fill{clip-path:url(#k-upper-clipping-mask);}
-                .k-lower-fill{clip-path:url(#k-lower-clipping-mask);}
-                .j-upper-fill{clip-path:url(#j-upper-clipping-mask);}
-                .j-lower-group{clip-path:url(#j-lower-clipping-mask);}
-                .j-lower-fill{transform-origin: 280px 330px;}
+				.k-left-fill{clip-path:url(#k-left-clipping-mask);}
+				.k-upper-fill{clip-path:url(#k-upper-clipping-mask);}
+				.k-lower-fill{clip-path:url(#k-lower-clipping-mask);}
+				.j-upper-fill{clip-path:url(#j-upper-clipping-mask);}
+				.j-lower-group{clip-path:url(#j-lower-clipping-mask);}
+				.j-lower-fill{transform-origin: 280px 330px;}
 			</style>
             <path class="background" d="M73.6,0h352.9C467.1,0,500,32.9,500,73.6v352.9c0,40.6-32.9,73.5-73.5,73.5H73.6C32.9,500,0,467.1,0,426.5V73.6
 			C0,32.9,32.9,0,73.6,0z"/>

@@ -27,7 +27,7 @@
         ownedQueue?: PIXI.Graphics[] = [];
     }
 
-    let containerElement : HTMLElement;
+    let containerElement : HTMLElement = $state();
     let columns : number;
     let rows : number;
 

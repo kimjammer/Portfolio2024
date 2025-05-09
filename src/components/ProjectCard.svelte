@@ -2,14 +2,24 @@
     import anime from "animejs";
     import {primaryColor} from "../store";
 
-    export let title: string;
-    export let description: string;
-    export let skills: string[];
-    export let image: string;
-    export let url: string = "";
+    interface Props {
+        title: string;
+        description: string;
+        skills: string[];
+        image: string;
+        url?: string;
+    }
 
-    let card: HTMLElement;
-    let bg: HTMLElement;
+    let {
+        title,
+        description,
+        skills,
+        image,
+        url = ""
+    }: Props = $props();
+
+    let card: HTMLElement = $state();
+    let bg: HTMLElement = $state();
 
     const handleMouseMove = (e: MouseEvent) => {
         let cardRect = card.getBoundingClientRect();
@@ -57,8 +67,8 @@
     </div>
     <div class="content"
          role="group"
-         on:mouseenter={handleHover}
-         on:mouseleave={handleHoverExit}
+         onmouseenter={handleHover}
+         onmouseleave={handleHoverExit}
          bind:this={card}
     >
         <div>
