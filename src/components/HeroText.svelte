@@ -109,7 +109,7 @@ style="--primary-color: {$primaryColor};"
         <div class="line">
             <h1 class="clip">
                 <span class="inter-base">
-                    a(n)
+                    a
                 </span>
                 <span class="role1 animate inter-emphasis">
                     (Designer)
