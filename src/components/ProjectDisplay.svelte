@@ -21,6 +21,7 @@
 					description="A realtime collaboration toolbox to make groupwork a breeze."
 					skills={["Svelte", "Go", "MongoDB"]}
 					image="/images/pleiades.png"
+					url="https://pleiades.pages.dev"
 			/>
 		</div>
 		<div class="item small"
@@ -31,6 +32,7 @@
 					description="Easily and beautifully control your music from a streamdeck."
 					skills={["JS"]}
 					image="/images/ytmusiccontroller.jpg"
+					url="https://github.com/kimjammer/youtube-music-controller"
 			/>
 		</div>
 	</div>
